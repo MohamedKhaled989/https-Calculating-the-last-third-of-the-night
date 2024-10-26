@@ -1,0 +1,102 @@
+/* styles.css */
+body {
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    background: linear-gradient(to bottom, #001f3f, #004080);
+    margin: 0;
+    /* إزالة الهوامش الافتراضية */
+    padding: 0;
+    /* إزالة الحشوات الافتراضية */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* لجعل الفوتر في الأسفل */
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #0065cb;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    /* توسيط المحتوى */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #0065cb;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    direction: rtl;
+}
+
+input {
+    width: 100%;
+    padding: 8px 0;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF10;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #4CAF50;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+footer {
+    color: #ffffff;
+    /* لون النص */
+    text-align: center;
+    /* محاذاة النص في المنتصف */
+    padding: 20px 0;
+    /* مساحة داخلية */
+}
+
+.footer-container {
+    max-width: 1200px;
+    /* أقصى عرض للفوتر */
+    margin: 0 auto;
+    /* توسيط الفوتر */
+}
+
+a{
+    color: #eee;
+    text-decoration: none;
+    padding: 2px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background-color: #00366c;
+}
+a:hover{
+    
+    background-color: #004081;
+}
+.asgr,.akbr{
+    color: red;
+}
