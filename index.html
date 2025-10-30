@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حساب الثلث الأخير من الليل</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>🌙 حساب الثلث الأخير من الليل</h1>
+        <label for="date">التاريخ (YYYY-MM-DD):</label>
+        <input type="date" id="date" required>
+
+        <label for="method">طريقة الحساب:</label>
+        <select id="method">
+            <option value="4">أم القرى (السعودية)</option>
+            <option value="5">الهيئة المصرية (مصر)</option>
+        </select>
+
+        <button onclick="getLocationAndFetch()">تحميل الأوقات تلقائياً (بناءً على موقعك)</button>
+        <button onclick="fetchPrayerTimes()">تحميل الأوقات (يدوياً)</button>
+
+        <label for="sunset">وقت المغرب (HH:MM):</label>
+        <input type="time" id="sunset" required aria-label="وقت المغرب">
+
+        <label for="fajr">وقت الفجر (HH:MM):</label>
+        <input type="time" id="fajr" required aria-label="وقت الفجر">
+
+        <button onclick="calculateLastThird()">حساب</button>
+        <button onclick="resetForm()">إعادة تعيين</button>
+        <div id="result"></div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <span class="akbr">&lt;</span>
+            <span>Developed By</span>
+            <span class="asgr">&gt;</span>
+            <a href="https://www.facebook.com/mohamedkhaled.xxx/" target="_blank">Mohamed Khaled</a>
+            <span class="akbr">&lt;</span>
+            <span>All Copyrights Reserved</span>
+            <span class="asgr">&gt;</span>
+        </div>
+    </footer>
+</body>
+</html>
