@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>حساب الثلث الأخير من الليل</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="top-bar">
+    <div class="top-inner">
+      <!-- 🔘 سويتش الوضع الداكن والفاتح -->
+      <div class="theme-switch" id="themeToggle" aria-label="تبديل الوضع">
+        <div class="switch-handle">
+          <span class="icon sun">☀️</span>
+          <span class="icon moon">🌙</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>🌙 حساب الثلث الأخير من الليل</h1>
+
+      <label for="governorate">اختر المحافظة:</label>
+      <select id="governorate" aria-label="اختر المحافظة">
+        <option value="">-- اختر المحافظة --</option>
+      </select>
+
+      <label for="city">اختر المدينة / المركز:</label>
+      <select id="city" aria-label="اختر المدينة">
+        <option value="">-- اختر المدينة --</option>
+      </select>
+
+      <div class="row">
+        <button id="fetchTimes">جلب المواعيد</button>
+        <button id="manualBtn" class="secondary outline">إدخال المواعيد يدويًا</button>
+      </div>
+
+      <label for="sunset">🌇 وقت المغرب:</label>
+      <input type="time" id="sunset" aria-label="وقت المغرب" readonly>
+
+      <label for="fajr">🌅 وقت الفجر:</label>
+      <input type="time" id="fajr" aria-label="وقت الفجر" readonly>
+
+      <div class="row">
+        <button id="calcBtn" class="secondary">حساب الثلث الأخير</button>
+        <button id="resetBtn" class="secondary outline">إعادة تعيين</button>
+      </div>
+
+      <div id="result" role="status" aria-live="polite"></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <span class="akbr">&lt;</span>
+      <span>All Copyrights Reserved</span>
+      <span class="asgr">&gt;</span>
+      <a href="https://www.facebook.com/mohamedkhaled.xxx/" target="_blank">Mohamed Khaled</a>
+      <span class="akbr">&lt;</span>
+      <span>Developed By</span>
+      <span class="asgr">&gt;</span>
+    </div>
+    <!-- 🕓 سنة الإصدار -->
+    <div class="years">
+      <span>© 2026 - 2024</span>
+    </div>
+  </footer>
+</body>
+</html>
